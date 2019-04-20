@@ -28,4 +28,4 @@ Criei três ficheiros para poder correr o stack que são eles:
 
 Depois basta substituir o ficheiro docker-composer.yml pelo que está na pasta ./compose/
 
-E executar sempre o 'docker-compose up -d' e o stack vai sempre rodar com os 3 conatiners.
+E executar sempre o 'docker-compose up -d' e o stack vai rodar sempre com os 3 containers.
