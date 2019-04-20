@@ -1,0 +1,37 @@
+version: '3.3'
+
+services:
+   db:
+     image: mysql:5.7
+     volumes:
+       - ./mysql:/var/lib/mysql
+     ports:
+      - "3306:3306"
+     environment:
+       MYSQL_ROOT_PASSWORD: savage
+       MYSQL_DATABASE: curso
+       MYSQL_USER: curso
+       MYSQL_PASSWORD: curso
+
+   php:
+     depends_on:
+       - db
+     image: cursos_php:latest
+     ports:
+       - "80:80"
+       - "443:443"
+     volumes:
+       - "./html:/var/www/html"
+
+   pma:
+     depends_on:
+       - db
+     image: phpmyadmin/phpmyadmin
+     ports:
+       - 8080:80
+     environment:
+       PMA_HOST: db:3306
+       MYSQL_ROOT_PASSWORD: savage
+
+volumes:
+    mysql:

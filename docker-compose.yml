@@ -1,0 +1,15 @@
+php:
+  build: .
+  ports:
+    - "80:80"
+    - "443:443"
+  volumes:
+    - ./html:/var/www/html
+  
+db:
+  image: mysql:5.7
+  volumes:
+    - ./mysql:/var/lib/mysql
+  environment:
+    - MYSQL_ROOT_PASSWORD=savage
+    - MYSQL_DATABASE=curso
