@@ -21,7 +21,7 @@ Criei três ficheiros para poder correr o stack que são eles:
 - docker-composer.yml = para fazer o build e correr o container criado
 - ./compose/docker-compose.yml = Ficheiro com as configurações para correr o apache com php, mysql e phpmyadmin.
 
-** para correr o buid tem que executar o comando: **
+####para correr o buid tem que executar o comando:
 
 `$ docker-compose -f "docke-compose.yml" -d --build`
 
