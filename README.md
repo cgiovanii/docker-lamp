@@ -21,11 +21,12 @@ Criei três ficheiros para poder correr o stack que são eles:
 - docker-composer.yml = para fazer o build e correr o container criado
 - ./compose/docker-compose.yml = Ficheiro com as configurações para correr o apache com php, mysql e phpmyadmin.
 
-** para correr o buid tem que executar o comando:
+** para correr o buid tem que executar o comando: **
 
-' docker-compose -f "docke-compose.yml" -d --build
-' que ele cria a imagem personalizada, depois e só dar o comando 'docker-compose down' para parar os containers.
+`$ docker-compose -f "docke-compose.yml" -d --build`
 
-Depois basta substituir o ficheiro docker-composer.yml pelo que está na pasta ./compose/ e eliminar do Dockerfile
+que ele cria a imagem personalizada, depois e só dar o comando `$ docker-compose down` para parar os containers.
 
-E executar sempre o 'docker-compose up -d' e o stack vai rodar sempre com os 3 containers.
+Depois basta substituir o ficheiro docker-composer.yml pelo que está na pasta ./compose/ e eliminar do Dockerfile.
+
+Sempre que executar o comando `$ docker-compose up -d` e o stack vai rodar com os 3 containers.
