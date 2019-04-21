@@ -1,3 +1,8 @@
+##########################################################
+# Criado por: Giovani Oliveira <cgiovanii@gmail.com>     #
+# Data: 20/04/2019.                                      #
+# Adiciona as libs: gd, mysqli, mbstring, pdo, pdo_mysql #
+##########################################################
 FROM php:7.2-apache
 RUN apt-get update && apt-get install -y \
         libfreetype6-dev \

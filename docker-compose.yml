@@ -1,3 +1,4 @@
+#Corre o build e os containers
 php:
   build: .
   ports:
@@ -5,7 +6,8 @@ php:
     - "443:443"
   volumes:
     - ./html:/var/www/html
-  
+
+#Cria uma base de dados e adiciona a password de root  
 db:
   image: mysql:5.7
   volumes:
