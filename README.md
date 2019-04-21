@@ -29,4 +29,4 @@ O Docker criará um container php7.2-apache personalizado com as libs que faltav
 
 Depois basta substituir o ficheiro **docker-composer.yml** pelo que está na pasta **./compose/** e eliminar do **Dockerfile.**
 
-Sempre que executar o comando `$ docker-compose up -d` e o stack vai rodar com os 3 containers.
+Sempre que executar o comando `$ docker-compose up -d` o stack vai rodar com os 3 containers.
