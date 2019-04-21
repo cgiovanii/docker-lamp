@@ -17,9 +17,9 @@ Para facilitar e criar um Lamp completo adicionei mais dois containers que são:
 
 Criei três ficheiros para poder correr o stack que são eles:
 
-- Dockerfile = Serve para gerar um novo container com as alterações que quero.
-- docker-composer.yml = para fazer o build e correr o container criado
-- ./compose/docker-compose.yml = Ficheiro com as configurações para correr o apache com php, mysql e phpmyadmin.
+- Dockerfile = Serve para gerar um novo container com as alterações que necessito.
+- docker-composer.yml = para fazer o build e correr o container.
+- ./compose/docker-compose.yml = Ficheiro com as configurações para correr o Lamp (apache, php, mysql e phpmyadmin).
 
 #### Para correr o buid tem que executar o comando:
 
