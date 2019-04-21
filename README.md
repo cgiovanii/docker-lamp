@@ -26,6 +26,6 @@ Criei três ficheiros para poder correr o stack que são eles:
 ' docker-compose -f "docke-compose.yml" -d --build
 ' que ele cria a imagem personalizada, depois e só dar o comando 'docker-compose down' para parar os containers.
 
-Depois basta substituir o ficheiro docker-composer.yml pelo que está na pasta ./compose/
+Depois basta substituir o ficheiro docker-composer.yml pelo que está na pasta ./compose/ e eliminar do Dockerfile
 
 E executar sempre o 'docker-compose up -d' e o stack vai rodar sempre com os 3 containers.
