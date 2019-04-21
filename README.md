@@ -15,7 +15,7 @@ Para facilitar e criar um Lamp completo adicionei mais dois containers que são:
 
 ## Ficheiros
 
-Criei três ficheiros para poder correr o stack que são eles:
+Criei três ficheiros para poder correr o stack:
 
 - Dockerfile = Serve para gerar um novo container com as alterações que necessito.
 - docker-composer.yml = para fazer o build e correr o container.
@@ -25,8 +25,8 @@ Criei três ficheiros para poder correr o stack que são eles:
 
 `$ docker-compose -f "docke-compose.yml" -d --build`
 
-que ele cria a imagem personalizada, depois e só dar o comando `$ docker-compose down` para parar os containers.
+O Docker criará um container php7.2-apache personalizado com as libs que faltavam, e depois é só executar o comando `$ docker-compose down` para parar os containers.
 
-Depois basta substituir o ficheiro docker-composer.yml pelo que está na pasta ./compose/ e eliminar do Dockerfile.
+Depois basta substituir o ficheiro **docker-composer.yml** pelo que está na pasta **./compose/** e eliminar do **Dockerfile.**
 
 Sempre que executar o comando `$ docker-compose up -d` e o stack vai rodar com os 3 containers.
